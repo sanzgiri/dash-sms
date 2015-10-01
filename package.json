@@ -1,0 +1,22 @@
+{
+  "name": "dash-sms",
+  "version": "0.0.1",
+  "description": "Amazon Dash button to send SMS",
+  "main": "index.js",
+  "dependencies": {
+    "node-dash-button": "^0.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "twilio",
+    "dash"
+  ],
+  "bin": {
+    "dash-sms": "index.js"
+  },
+  "author": "Ashutosh Sanzgiri",
+  "license": "MIT"
+}

@@ -1,0 +1,14 @@
+{
+  "button": {
+    "id": "00:11:22:33:44:55" // enter the MAC address of your Dash button here
+  },
+  "twilio": {  // these are your twilio credentials
+    "sid": "ABcdefABcdefABcdefANcdefABcdefABcd",
+    "token": "abcdefabcdefabcdefabcdefabcdefab"
+  },
+  "message": {
+    "from": "9711234567",  // this is the number you got from twilio
+    "to": "5037890000",    // this is the number to which you want to send an SMS 
+    "body": "Greetings from Dash!"  // this is the message to send when the Dash button is pressed
+  }
+}
