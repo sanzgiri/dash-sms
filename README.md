@@ -1,4 +1,5 @@
-# Dash SMS
+# dash-sms
+Send an SMS when an Amazon Dash button is pressed
 
 ## Setup
 
