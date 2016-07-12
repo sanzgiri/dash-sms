@@ -1,13 +1,14 @@
 {
   "name": "dash-sms",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Amazon Dash button to send SMS",
   "main": "index.js",
   "dependencies": {
-    "node-dash-button": "^0.1.1"
+    "node-dash-button": "^0.5.0"
   },
   "devDependencies": {},
   "scripts": {
+    "clean": "rm -rf node_modules",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
