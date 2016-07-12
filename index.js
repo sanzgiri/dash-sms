@@ -1,6 +1,6 @@
 #! /usr/bin/env node
 
-var config = require('./config');
+var config = require('./config.json');
 var dash_button = require('node-dash-button');
 var dash = dash_button(config.button.id);
 
@@ -17,7 +17,7 @@ dash.on("detected", function (){
   client.messages.create({
         to: config.message.to,
         from: config.message.from,
-        body: config.message.body,
+        body: config.message.body
   }, function(err, message) {
         console.log(message.sid);
   });
