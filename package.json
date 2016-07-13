@@ -4,8 +4,10 @@
   "description": "Amazon Dash button to send SMS",
   "main": "index.js",
   "dependencies": {
+    "lodash": "^4.13.1",
     "node-dash-button": "^0.5.0",
-    "twilio": "^2.9.1"
+    "twilio": "^2.9.1",
+    "when": "^3.7.7"
   },
   "devDependencies": {},
   "scripts": {
