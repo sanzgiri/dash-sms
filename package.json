@@ -16,8 +16,8 @@
     "clean": "rm -rf node_modules",
     "build": "npm run clean && npm install",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "start:dev": "node-dev index.js"
+    "start": "sudo node index.js",
+    "start:dev": "sudo node-dev index.js"
   },
   "keywords": [
     "twilio",

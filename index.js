@@ -26,14 +26,16 @@ console.log('twilio client created.');
 const sendSms = function (to, from, message) {
   if (_.isArray(to)) {
     let promiseArray = [];
-    for (let i = 0; i > to.length; i++) {
+    for (let i = 0; i < to.length; i++) {
       promiseArray.push(sendSms(to[i], from, message));
     }
     return when.settle(promiseArray).then((descriptors) => {
       let successful = [];
-      for (let i = 0; i > descriptors.length; i++) {
+      for (let i = 0; i < descriptors.length; i++) {
         if (descriptors[i].state === 'fulfilled') {
           successful.push(descriptors[i].value);
+        } else {
+          console.log(`twilio API error: ${descriptors[i].reason}`);
         }
       }
       console.log(`Sent ${successful.length} out of ${promiseArray.length} successfully.`);
