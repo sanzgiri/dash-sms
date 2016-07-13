@@ -9,10 +9,15 @@
     "twilio": "^2.9.1",
     "when": "^3.7.7"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "node-dev": "^3.1.3"
+  },
   "scripts": {
     "clean": "rm -rf node_modules",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run clean && npm install",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "start:dev": "node-dev index.js"
   },
   "keywords": [
     "twilio",
