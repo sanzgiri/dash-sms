@@ -1,14 +1,23 @@
 {
   "name": "dash-sms",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Amazon Dash button to send SMS",
   "main": "index.js",
   "dependencies": {
-    "node-dash-button": "^0.1.1"
+    "lodash": "^4.13.1",
+    "node-dash-button": "^0.5.0",
+    "twilio": "^2.9.1",
+    "when": "^3.7.7"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "node-dev": "^3.1.3"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm -rf node_modules",
+    "build": "npm run clean && npm install",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sudo node index.js",
+    "start:dev": "sudo node-dev index.js"
   },
   "keywords": [
     "twilio",
