@@ -24,6 +24,7 @@ console.log('twilio client created.');
  * @returns {*} : a promise which resolves in to single twilio response, an array of twilio responses or a twilio error
  */
 const sendSms = function (to, from, message) {
+  "use strict";
   if (_.isArray(to)) {
     let promiseArray = [];
     for (let i = 0; i < to.length; i++) {
